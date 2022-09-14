@@ -11,8 +11,11 @@
   "author": "Chung Kao",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.0.2",
+    "ejs": "^3.1.6",
     "express": "^4.17.1",
-    "ejs": "^3.1.6"
+    "express-session": "^1.17.3",
+    "mongoose": "^6.6.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.9"
