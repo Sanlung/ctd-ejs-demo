@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/head'); %>
+  </head>
+  <body class="container">
+    <header><%- include('../partials/header'); %></header>
+
+    <main>
+      <p class="text-center text-primary"><%= message %></p>
+      <form action="/tasks" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" name="name" /><br />
+        <input type="checkbox" name="complete" value="true" />
+        <label for="compelete">Completed</label><br />
+        <button type="submit" class="btn btn-primary">Add</button>
+        <a href="/tasks" class="btn btn-primary">Cancel</a>
+      </form>
+    </main>
+
+    <footer><%- include('../partials/footer'); %></footer>
+  </body>
+</html>
